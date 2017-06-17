@@ -1,0 +1,210 @@
+/* header styles */
+a { display: block; outline: 0;}
+header { background: #ffffff; }
+.logo { font-size: 36px; color: #000;}
+.logoText span {display: block; font-size: 13px; font-weight: bold; color:#000}
+ .logo b { width: 100px; height: 100px; float: left; }
+.logo b img {  width: 100px; height: 100px;}
+.logoText { font-weight: bold;    text-align: center;}
+ul.social {margin: 20px 7px 0 0;}
+ul.social li { margin-right: 7px; float: left; list-style: none;}
+ul.social li a{padding: 8px 10px;display: block;width: 36px;height: 36px;border-radius: 18px;font-size: 20px;line-height: 20px;color: #0071b2;background: #ffffff; }
+ul.social li a:hover {  color: #333}
+.chef ul.social li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active{opacity: 0.7;}
+
+.box {
+  border:1px solid #333;
+  background-color:#ffffff;
+  box-shadow: 1px 5px #0f19db;
+  margin-bottom: 10px;
+  /*height:335px;*/
+}
+
+#slides_control > div{
+  height: 240px;
+}
+img{
+  margin:auto;
+  width: 100%;
+}
+
+.slideImgCls{
+  height: 340px;
+}
+
+#slides_control {
+   width: 100%;
+   top:20px;
+  height: 240px;
+ /*margin-left:-200px;*/
+}
+
+.placements { margin: 0; padding: 0}
+.placements li { float: left; margin: 1%; border: 1px solid #3c3c3c; border-radius: 4px;  overflow: hidden; width: 48%; height: 100px;}
+.placements li img { align-items: center;}
+
+.panel{
+  border-radius: 0px !important;
+}
+.panel-default >  .panelHeading {
+    background-color: #0071b2;
+    border-radius: 0px !important;
+    color: #fff;
+    font-weight: bold;
+}
+/*.panelDefault { border-color: #0071b2;}*/
+
+.panelBody {
+  background: #01296a;
+  color: #fff;
+  /*min-height: 200px;*/
+}
+.myNavbar { background: rgba(0, 0, 0, 0.52); border-radius: 0; color: #fff;}
+.myNavbar .navbar-nav > li > a { color: #fff;font-weight: bold;}
+.myNavbar .navbar-nav > li > a:hover { background: transparent; color: #f1cd44;}
+h4{
+  color: #ffff00 !important;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #0071b2;
+}
+
+.copyRights {
+  color: #f1cd44;
+  line-height: 40px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.gallery {
+  padding: 0;
+}
+
+.gallery li {
+  display: inline-block;
+  margin: 0 1em 1em 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .gallery li {
+    margin: 0;
+  }
+}
+
+.gallery1 img {
+  width: 75px;
+  height: 75px;
+}
+
+.gallery2 img {
+  width: 6em;
+}
+
+.gallery5 img {
+  width: 120px;
+}
+
+
+p{
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 15px;
+}
+
+
+.alert{
+  padding: 10px !important;
+}
+
+address{
+  color: #ffff00;
+  font-weight: bold;
+  line-height: 1.8 !important;
+}
+
+.col-sm-5cols{
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media (min-width: 768px) {
+.col-sm-5cols {
+        width: 20%;
+        float: left;
+    }
+}
+
+
+/* photo gallery */
+/* CSS used here will be applied after bootstrap.css */
+.thumbnail_container {
+     position: relative;
+     width: 100%;
+     padding-bottom: 100%;
+  margin-bottom:20px;
+}
+
+.thumbnail {
+    position:absolute;
+    width:100%;
+    height:100%;
+
+}
+.thumbnail img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+img{
+    max-height:100%;
+    max-width:100%;
+}
+
+.img-thumbnail{
+  margin-bottom: 5px;
+}
+.media-heading{
+   color: #e3512a  !important;
+   font-style: italic;
+   text-align: center;
+   padding: 45px;
+}
+
+.modal-dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+  min-height: calc(100vh - 60px);
+}
+@media (max-width: 767px) {
+  .modal-dialog {
+    min-height: calc(100vh - 20px);
+  }
+}

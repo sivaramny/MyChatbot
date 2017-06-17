@@ -1,0 +1,62 @@
+<body ng-app="testapp">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        &nbsp;
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="panel panel-primary"  ng-controller="ChatController">
+              <div class="panel-heading" style="padding:0 0 0 8px;">
+                <span class="glyphicon glyphicon-user"></span>
+                <h6 class="panel-title" style="display:inline;">Chat</h6>
+                <div class="btn-group btn-group-xs pull-right">
+                  <button type="button" class="btn btn-primary" ng-click="close()"><span class="glyphicon glyphicon-remove"></span></button>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="panel-body" style="padding:0 4px;">
+                <div class="row">
+                  <div class="col-xs-12 scrolWell">
+                    <table class="table table-hover table-condensed" style="">
+                      <tr ng-hide="chatMessages.length === 0" ng-repeat="chat in chatMessages | orderBy:origDt"
+                          style="min-width:100%;max-width:100%;width:100%;">
+                            <td>
+                        <div class="alert alert-info text-right word-wrap:break-word" role="alert">{{chat.text}}</div>
+                        </td>
+                      </tr>
+                      <tr ng-show="chatMessages.length === 0">
+                        <td>
+                          <div class="alert alert-success text-right">Welcome to Verizon!</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <form>
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-addon glyphicon glyphicon-user"></span>
+                    <input type="text" class="form-control" ng-model="newChatMsg" placeholder="Type Here..."/>
+                    <span class="input-group-btn">
+                      <button class="btn btn-primary" type="submit" ng-click="addChat()">Send</button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,8 @@
+- UI Tweaks
+- Logging Enhancement
+- Common Config
+- AMI Creation
+- Scalable
+- Persistence
+- Logging Lex intents
+- Integrate to external API
